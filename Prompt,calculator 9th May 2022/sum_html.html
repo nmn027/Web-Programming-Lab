@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body style="background-color:powderblue;">
+    
+    <script type="text/javascript">
+        function sum()
+        {
+            var num1,num2,sum;
+            num1=Number(document.getElementById("first").value);
+            num2=Number(document.getElementById("second").value);
+            sum=num1+num2;
+            document.getElementById("answer").innerHTML= sum;
+        }
+        </script>
+        
+        <h3><u>Sum of two numbers </u><h3>
+            <h4><form>
+                <label>Enter first number</label><br>
+                <input type="number" id="first" name="first"><br><br>
+              </form>
+              <form>
+                <label>Enter second number</label><br>
+                <input type="number" id="second" name="second"><br><br>
+              </form>
+              <button onclick="sum()">Submit</button>
+              <p id="answer"></p>
+              <h4>           
+</body>
+</html>
